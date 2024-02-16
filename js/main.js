@@ -3,8 +3,10 @@ let goldGain = 0;
 function addMount() {
     let id = getRandomInt(5);
     const mount = m[id];
+    let color = mount.rare == 1 ? `#9d9d9d` : mount.rare == 2 ? `#1eff00` : mount.rare == 3 ? `#0070dd` : mount.rare == 4 ? `#a335ee` : `#ff8000`;
+
     let card = `<div id="card">
-                        <button onclick=""> 
+    <button onclick="" style="background-color: ${color};"> 
                             <div id="name">
                                 ${mount.name} 
                             </div>

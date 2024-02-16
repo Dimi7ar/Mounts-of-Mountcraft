@@ -19,7 +19,7 @@ const m = {
     1: {
         id: n.Invincible,
         name: "Invincible",
-        rare: r.Epic,
+        rare: r.Common,
         image: `${i}Invincible${e}`,
         desc: `Icecrown Citadel > Arthas the Lich King`,
         income: 1
@@ -27,7 +27,7 @@ const m = {
     2: {
         id: n.Ashes,
         name: "Ashes of Al'ar",
-        rare: r.Epic,
+        rare: r.Uncommon,
         image: `${i}Ashes${e}`,
         desc: `The Eye, Tempest Keep > Kael'thas Sunstrider`,
         income: 1
@@ -35,7 +35,7 @@ const m = {
     3: {
         id: n.TimeLost,
         name: "Time-Lost Proto-Drake",
-        rare: r.Epic,
+        rare: r.Rare,
         image: `${i}TimeLost${e}`,
         desc: `The Storm Peaks > Time-Lost Proto-Drake`,
         income: 1
@@ -51,7 +51,7 @@ const m = {
     5: {
         id: n.RavenLord,
         name: "Raven Lord",
-        rare: r.Epic,
+        rare: r.Legendary,
         image: `${i}RavenLord${e}`,
         desc: `Sethekk Halls > Anzu`,
         income: 1
