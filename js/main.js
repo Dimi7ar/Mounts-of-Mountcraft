@@ -13,7 +13,7 @@ function addMount() {
                                 ${mount.desc}
                             </div>
                             <div id="income">
-                                +${mount.income} <img src="/images/gold.png" style="width: 12px">/s
+                                +${mount.income} <img src="./images/gold.png" style="width: 12px">/s
                             </div>
                         </button>
                     </div>`;

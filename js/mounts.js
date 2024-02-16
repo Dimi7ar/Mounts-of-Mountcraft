@@ -12,7 +12,7 @@ r = {
     Epic: 4,
     Legendary: 5
 };
-const i = "/images/";
+const i = "./images/";
 const e = ".jpg"
 
 const m = {
