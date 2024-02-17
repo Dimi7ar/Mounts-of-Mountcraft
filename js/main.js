@@ -2,29 +2,33 @@ let gold = 0;
 let goldGain = 0;
 let collection = [];
 
-function addMount() {
-    let id = getRandomInt(5);
-    const mount = m[id];
-    if(!collection.includes(mount)) {
-    collection.push(mount);  
-    let color = mount.rare == 1 ? `#9d9d9d` : mount.rare == 2 ? `#1eff00` : mount.rare == 3 ? `#0070dd` : mount.rare == 4 ? `#a335ee` : `#ff8000`;
+function loadGame() {
+    setInterval(gameLoop, 1000);
+}
 
-    let card = `<div id="card">
-    <button onclick="" style="background-color: ${color};"> 
+function addMount() {
+    let id = getRandomInt(6);
+    const mount = m[id];
+    if (!collection.includes(mount)) {
+        collection.push(mount);
+        let color = mount.Rarity == 1 ? `#9d9d9d` : mount.Rarity == 2 ? `#1eff00` : mount.Rarity == 3 ? `#0070dd` : mount.Rarity == 4 ? `#a335ee` : `#ff8000`;
+
+        let card = `<div id="card">
+        <button onclick="" style="background-color: ${color};"> 
                             <div id="name">
-                                ${mount.name} 
+                                ${mount.Name} 
                             </div>
-                            <img src="${mount.image}">
+                            <img src="./images/${mount.Expansion}/${mount.ID}.jpg">
                             <div id="obtain">
-                                ${mount.desc}
+                                ${mount.Desc}
                             </div>
                             <div id="income">
-                                +${mount.income} <img src="./images/gold.png" style="width: 12px">/s
+                                +${mount.Income} <img src="./images/gold.png" style="width: 12px">/s
                             </div>
                         </button>
                     </div>`;
-    document.getElementById('mount_container').innerHTML += card;
-    goldGain += mount.income;
+        document.getElementById('mount_container').innerHTML += card;
+        goldGain += mount.Income;
     }
     console.log(goldGain)
 }
@@ -36,8 +40,19 @@ function updateGold() {
     document.getElementById(`gold`).innerHTML = htmlGold;
 }
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max) + 1;
+function displayTab(tab) {
+    document.getElementById('main').childNodes.forEach(function (child) {
+        if (child.nodeType === 1 && child.style) {
+            child.style.display = 'none';
+        }
+    });
+    document.getElementById(tab).style.display = 'flex';
 }
 
-setInterval(updateGold, 1000);
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+function gameLoop() {
+    updateGold();
+}

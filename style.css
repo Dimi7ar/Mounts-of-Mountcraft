@@ -64,6 +64,8 @@
 #card button > img {
     width: 150px;
     border: 3px solid black;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 #card button > #income {
@@ -105,4 +107,8 @@
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+button {
+    cursor: pointer;
 }

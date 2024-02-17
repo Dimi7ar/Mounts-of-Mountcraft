@@ -10,37 +10,37 @@
     <title>Mounts of Mountcraft</title>
 </head>
 
-<body style="background-color: gray;">
+<body onload="loadGame()" style="background-color: gray;">
     <div id="game">
         <div class="center">
             <div id="side_bar">
                 <div>
-                    <button onclick="" class="btn_tab" id="tab0">
+                    <button onclick="displayTab(`mount_container`)" class="btn_tab" id="tab0">
                         <div>Home</div>
                     </button>
                 </div>
                 <div>
-                    <button onclick="" class="btn_tab" id="tab1">
+                    <button onclick="displayTab(`instances`)" class="btn_tab" id="tab1">
                         <div>Instances</div>
                     </button>
                 </div>
                 <div>
-                    <button onclick="" class="btn_tab" id="tab2">
+                    <button onclick="displayTab(`vendors`)" class="btn_tab" id="tab2">
                         <div>Vendors</div>
                     </button>
                 </div>
                 <div>
-                    <button onclick="" class="btn_tab" id="tab3">
+                    <button onclick="displayTab(`bmah`)" class="btn_tab" id="tab3">
                         <div>Bmah</div>
                     </button>
                 </div>
                 <div>
-                    <button onclick="" class="btn_tab" id="tab4">
+                    <button onclick="displayTab(`collection`)" class="btn_tab" id="tab4">
                         <div>Collection</div>
                     </button>
                 </div>
                 <div>
-                    <button onclick="" class="btn_tab" id="tab5">
+                    <button onclick="displayTab(`options`)" class="btn_tab" id="tab5">
                         <div>Options</div>
                     </button>
                 </div>
@@ -52,23 +52,21 @@
             </div>
             <div id="main">
                 <div id="mount_container">
-                    
-                    <!-- CARD TEMPLATE 
-                    <div id="card">
-                        <button onclick="">
-                            <div id="name">
-                                Invincible
-                            </div>
-                            <img src="images/wingedhorse.jpg">
-                            <div id="obtain">
-                                Frostmourne > ICC > Lich King
-                            </div>
-                            <div id="income">
-                                +1 gold/s
-                            </div>
-                        </button>
-                    </div> 
-                    -->
+                </div>
+                <div id="instances" style="display: none;">
+                    instances
+                </div>
+                <div id="vendors" style="display: none;">
+                    vendors
+                </div>
+                <div id="bmah" style="display: none;">
+                    bmah
+                </div>
+                <div id="collection" style="display: none;">
+                    coll
+                </div>
+                <div id="options" style="display: none;">
+                    options
                 </div>
             </div>
             <div id="resources">
