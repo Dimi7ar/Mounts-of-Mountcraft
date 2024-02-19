@@ -7,7 +7,7 @@ const r = {
 };
 
 let m = [];
-fetch('../mounts.csv')
+fetch('./mounts.csv')
     .then(response => response.text())
     .then(csvText => {
 

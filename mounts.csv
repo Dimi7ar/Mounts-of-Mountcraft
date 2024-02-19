@@ -1,7 +1,26 @@
 ﻿ID,Name,Desc,Rarity,Income,Expansion,
 1,Black Stallion,Stormwind > Vendor,1,1,Classic
 2,Chestnut Mare,Stormwind > Vendor,1,1,Classic
-3,Pinto,Stormwind > Vendor,1,1,Classic
+3,Pinto,Wetlands > Vendor,1,1,Classic
 4,Brown Horse,Stormwind > Vendor,1,1,Classic
-5,Palomino,Stormwind > Vendor,3,5,Classic
-6,White Stallion,Stormwind > Vendor,3,5,Classic
+5,Swift Palomino,Stormwind > Vendor,1,2,Classic
+6,Swift White Steed,Stormwind > Vendor,1,2,Classic
+7,Swift Brown Steed,Stormwind > Vendor,1,2,Classic
+8,Palomino,Legacy,3,5,Classic
+9,White Stallion,Legacy,3,5,Classic
+10,White Ram,Dun Morogh > Vendor,1,1,Classic
+11,Brown Ram,Dun Morogh > Vendor,1,1,Classic
+12,Gray Ram,Dun Morogh > Vendor,1,1,Classic
+13,Swift White Ram,Dun Morogh > Vendor,1,2,Classic
+14,Swift Brown Ram,Dun Morogh > Vendor,1,2,Classic
+15,Swift Gray Ram,Dun Morogh > Vendor,1,2,Classic
+16,Frost Ram,Legacy,3,5,Classic
+17,Black Ram,Legacy,3,5,Classic
+18,Striped Frostsaber,Darnassus > Vendor,1,1,Classic 
+19,Striped Nightsaber,Darnassus > Vendor,1,1,Classic
+20,Spotted Frostsaber,Darnassus > Vendor,1,1,Classic
+21,Swift Frostsaber,Darnassus > Vendor,1,2,Classic
+22,Swift Stormsaber,Darnassus > Vendor,1,2,Classic
+23,Swift Mistsaber,Darnassus > Vendor,1,2,Classic
+24,Ancient Frostsaber,Legacy,3,5,Classic
+25,Black Nightsaber,Legacy,3,5,Classic

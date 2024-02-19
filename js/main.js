@@ -7,7 +7,7 @@ function loadGame() {
 }
 
 function addMount() {
-    let id = getRandomInt(6);
+    let id = getRandomInt(m.length - 1);
     const mount = m[id];
     if (!collection.includes(mount)) {
         collection.push(mount);
